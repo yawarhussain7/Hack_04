@@ -4,8 +4,8 @@ Auhtor Yawar Hussain
 
 #include<stdio.h>
 
-int main()
+int main(int argv, char **argc)
 {
-    printf("Testing the folder \n");
+  
     return 0;
 }
