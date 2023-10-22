@@ -8,7 +8,10 @@ int main(int argc, char **argv)
 {
     if(argv != 6)
     {
-       
+        printf("ERROR........!\n");
+        printf("Please Enter 6 argument with your exe file \nWith respect to given instruction:\n");
+        printf("exe-file initial-Balance  monthly-Contribution Annual-Rate-Return Annual-Inflation-Rate Number-of-year\n");
+        exit(0);
     }
 
     double initialBalance = atof(argv[1]);
