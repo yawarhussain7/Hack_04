@@ -2,11 +2,11 @@
 Auhtor Yawar Hussain
 */
 
-#include<stdio.h>
+#include <stdio.h>
 
 int main(int argc, char **argv)
 {
-    if(argv != 6)
+    if (argv != 6)
     {
         printf("ERROR........!\n");
         printf("Please Enter 6 argument with your exe file \nWith respect to given instruction:\n");
@@ -19,15 +19,15 @@ int main(int argc, char **argv)
     double annualRateOfReturn = atof(argv[3]);
     double annualInflationRate = atof(argv[4]);
     int Number_of_years = atoi(argv[5]);
-    
-    double Total_intrest = 0,intrest = 0,inflated_Intrest = 0;
+
+    double Total_intrest = 0, intrest = 0, inflated_Intrest = 0;
     double balance = initialBalance;
 
     double monthlyRateOfReturn = pow(1 + annualRateOfReturn, 1.0 / 12) - 1;
     double monthlyInflationRate = pow(1 + annualInflationRate, 1.0 / 12) - 1;
 
     printf("Month \t Intrest  \t Balance\n");
-    for(int i = 1; i <= Number_of_years * 12; i++)
+    for (int i = 1; i <= Number_of_years * 12; i++)
     {
         intrest = balance * monthlyRateOfReturn;
         inflated_Intrest = intrest / (1 + monthlyInflationRate);
@@ -36,9 +36,11 @@ int main(int argc, char **argv)
 
         Total_intrest = Total_intrest + inflated_Intrest;
 
-         printf("%5d $%10.2f $%10.2f\n", i, inflated_Intrest, balance);
-        
+        printf("%5d $%10.2f $%10.2f\n", i, inflated_Intrest, balance);
     }
+
+    printf("Total Interest is : $%.2f\n", Total_intrest);
+    printf("Total Balance is : $%.2f\n", balance);
 
     return 0;
 }
