@@ -6,6 +6,11 @@ Auhtor Yawar Hussain
 
 int main(int argc, char **argv)
 {
+    if(argv != 6)
+    {
+       
+    }
+
     double initialBalance = atof(argv[1]);
     double monthlyContribution = atof(argv[2]);
     double annualRateOfReturn = atof(argv[3]);
@@ -14,6 +19,8 @@ int main(int argc, char **argv)
 
     double monthlyRateOfReturn = pow(1 + annualRateOfReturn, 1.0 / 12) - 1;
     double monthlyInflationRate = pow(1 + annualInflationRate, 1.0 / 12) - 1;
+
+
 
     return 0;
 }
