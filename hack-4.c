@@ -35,6 +35,8 @@ int main(int argc, char **argv)
         balance = balance + inflated_Intrest + monthlyContribution;
 
         Total_intrest = Total_intrest + inflated_Intrest;
+
+         printf("%5d $%10.2f $%10.2f\n", i, inflated_Intrest, balance);
         
     }
 
