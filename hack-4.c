@@ -29,7 +29,8 @@ int main(int argc, char **argv)
     printf("Month \t Intrest  \t Balance\n");
     for(int i = 1; i <= Number_of_years * 12; i++)
     {
-
+        intrest = balance * monthlyRateOfReturn;
+        
     }
 
     return 0;
