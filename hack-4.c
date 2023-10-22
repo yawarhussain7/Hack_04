@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     int Number_of_years = atoi(argv[5]);
 
     double monthlyRateOfReturn = pow(1 + annualRateOfReturn, 1.0 / 12) - 1;
-   
+    double monthlyInflationRate = pow(1 + annualInflationRate, 1.0 / 12) - 1;
 
     return 0;
 }
