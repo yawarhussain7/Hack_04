@@ -31,6 +31,10 @@ int main(int argc, char **argv)
     {
         intrest = balance * monthlyRateOfReturn;
         inflated_Intrest = intrest / (1 + monthlyInflationRate);
+
+        balance = balance + inflated_Intrest + monthlyContribution;
+
+        Total_intrest = Total_intrest + inflated_Intrest;
         
     }
 
