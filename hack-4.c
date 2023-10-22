@@ -30,6 +30,7 @@ int main(int argc, char **argv)
     for(int i = 1; i <= Number_of_years * 12; i++)
     {
         intrest = balance * monthlyRateOfReturn;
+        inflated_Intrest = intrest / (1 + monthlyInflationRate);
         
     }
 
