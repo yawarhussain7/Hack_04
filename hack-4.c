@@ -19,11 +19,18 @@ int main(int argc, char **argv)
     double annualRateOfReturn = atof(argv[3]);
     double annualInflationRate = atof(argv[4]);
     int Number_of_years = atoi(argv[5]);
+    
+    double Total_intrest = 0,intrest = 0,inflated_Intrest = 0;
+    double balance = initialBalance;
 
     double monthlyRateOfReturn = pow(1 + annualRateOfReturn, 1.0 / 12) - 1;
     double monthlyInflationRate = pow(1 + annualInflationRate, 1.0 / 12) - 1;
 
+    printf("Month \t Intrest  \t Balance\n");
+    for(int i = 1; i <= Number_of_years * 12; i++)
+    {
 
+    }
 
     return 0;
 }
