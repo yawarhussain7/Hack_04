@@ -11,5 +11,9 @@ int main(int argc, char **argv)
     double annualRateOfReturn = atof(argv[3]);
     double annualInflationRate = atof(argv[4]);
     int Number_of_years = atoi(argv[5]);
+
+    double monthlyRateOfReturn = pow(1 + annualRateOfReturn, 1.0 / 12) - 1;
+   
+
     return 0;
 }
