@@ -3,10 +3,11 @@ Auhtor Yawar Hussain
 */
 
 #include <stdio.h>
-
-int main(int argc, char **argv)
+#include<math.h>
+#include<stdlib.h>
+int main(int argc,char **argv)
 {
-    if (argv != 6)
+    if(argc != 6)
     {
         printf("ERROR........!\n");
         printf("Please Enter 6 argument with your exe file \nWith respect to given instruction:\n");
